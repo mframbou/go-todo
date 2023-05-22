@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>top 5 meilleures api de france</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Testos</h1>
+    <div id="todo-list-parent"></div>
+    <div id="todo-add">
+        <input type="text" id="todo-input" placeholder="Enter todo" onkeyup="onTodoNameKeyUp(event)">
+        <button id="todo-add-button" onclick="addTodo()" disabled="True">Add Todo</button>
+    </div>
+</body>
+</html>
+
+<style>
+    .todo-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+    .todo-item-delete {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f00;
+        color: #fff;
+        border: 1px solid #f00;
+        padding: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .todo-item-completed {
+        text-decoration: line-through;
+        background-color: #aaa;
+    }
+
+</style>
